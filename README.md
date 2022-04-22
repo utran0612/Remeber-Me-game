@@ -50,12 +50,12 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](gif4-link-here)
 
 ## Reflection Questions
-1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
-Yes! I use [w3schools.com[(https://www.w3schools.com) for all the syntax
-Sounds comes from [mixkit](https://mixkit.co/free-sound-effects/game/)
-Stackoverflow for debugging
-JS, HTML, CSS documentation
-(This youtube video)[https://www.youtube.com/watch?v=_a4XCarxwr8&t=585s] for the timer
+1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. <br />
+Yes! I use [w3schools.com[(https://www.w3schools.com) for all the syntax <br />
+Sounds comes from [mixkit](https://mixkit.co/free-sound-effects/game/)<br />
+Stackoverflow for debugging<br />
+JS, HTML, CSS documentation<br />
+(This youtube video)[https://www.youtube.com/watch?v=_a4XCarxwr8&t=585s] for the timer<br />
 (Coolors)[https://coolors.co] for the color pallete
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
