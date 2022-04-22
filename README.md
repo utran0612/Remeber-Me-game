@@ -52,14 +52,15 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. <br />
 Yes! I use [w3schools.com](https://www.w3schools.com) for all the syntax <br />
-Sounds comes from [mixkit](https://mixkit.co/free-sound-effects/game/)<br />
+Sounds come from [mixkit](https://mixkit.co/free-sound-effects/game/)<br />
 Stackoverflow for debugging<br />
 JS, HTML, CSS documentation<br />
 [This youtube video](https://www.youtube.com/watch?v=_a4XCarxwr8&t=585s) for the timer<br />
 [Coolors](https://coolors.co) for the color pallete
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+
+- While I was testing the game logic, I encountered a bug that I haven’t found a direct way to fix. When the user correctly guessed all the buttons and then mistakenly pressed extra buttons, the program terminated. However, when the user hits “Start” again, the pattern from the last game keeps firing simultaneously with the pattern of the new game. It is because when the user did all the correct guesses, the next sequence is fired and when the program terminates because of wrong extra buttons, the fired sequence wasn’t completed. So in the next game, that sequence keeps firing simultaneously with the new pattern of the new game. Even when I plugged in codepath’s logic, this bug is still there. I tried a couple of ways to solve this problem, using var to track, looking it up on StackOverFlow and reading the documentation. I tried to track if the player pressed extra buttons by var “repeated” but it didn’t work. It turned out that the logic never gets to the condition where “guessCounter” > “progress” for the “repeated” var to be updated because when the player completes their guess, the guessCounter goes back to 0 immediately. I went on the slack channel for some help and I saw someone is trying to disable the buttons as an optional feature. I thought this could be the solution for bug.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 [YOUR ANSWER HERE]
