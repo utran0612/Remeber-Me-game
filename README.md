@@ -40,12 +40,13 @@ The following **additional** features are implemented:
 - [x] A pop-up notification when user gets to a new level
 - [x] Allow user to increase or decrease number of buttons on the game using "More" and "Less" button
 - [x] Freeze "More" and "Less" buttons once the game starts
+- [x] Blinking header "Sounds and Memory game" 
 
 ## Video Walkthrough (GIF)
 
-If you recorded multiple GIFs for all the implemented features, you can add them here:
-![](gif1-link-here)
-![](gif2-link-here)
+My gif doesn't work so please view the video here
+![video1](https://streamable.com/5npc0a)
+![video2](https://streamable.com/ehszg2)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
