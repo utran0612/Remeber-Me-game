@@ -40,7 +40,7 @@ The following **additional** features are implemented:
 - [x] A pop-up notification when user gets to a new level
 - [x] Allow user to increase or decrease number of buttons on the game using "More" and "Less" button
 - [x] Freeze "More" and "Less" buttons once the game starts
-- [x] Blinking header "Sounds and Memory game" 
+- [x] Blinking header "Light and Sounds Memory game" 
 
 ## Video Walkthrough (GIF)
 
