@@ -1,0 +1,239 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  background-color: #FDCA40;
+  color: #FF521B; 
+  text-align: center;
+}
+
+h1{
+  font-family: "Press Start 2P";
+  color: #FF521B;
+  
+}
+
+#startBtn, #stopBtn{
+  font-family: "Press Start 2P";
+  height: 35px;
+  width: 75px;
+  border-radius: 10px;
+  background-color: #5BC0BE;
+  padding: 0px;
+}
+
+#moreBtn, #lessBtn{
+  font-family: "Press Start 2P";
+  height: 35px;
+  width: 75px;
+  border-radius: 10px;
+  background-color: #5BC0BE;
+  padding: 0px;
+}
+
+.parent{
+  display: flex;
+  justify-content: center;
+}
+
+.child{
+  padding: 3px;
+}
+
+/*images and videos max out at full width */
+img {
+  height: 200px;
+  width: 200px;
+  margin: 2px;
+}
+
+
+button{
+/*   padding: 10px; */
+  border-radius: 50%;
+  border: 10px;
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin: 2px;
+  border: 2px;
+}
+
+.hidden {
+  display: none;
+}
+
+#button1 {
+    background: #96DED1;
+}
+
+#button2 {
+    background: #FED8B1;
+}
+
+#button3 {
+    background: pink;
+}
+
+#button4 {
+    background: lightyellow;
+}
+
+#button5 {
+    background: #C195D6;
+}
+
+#button6 {
+    background: #82E0AA;
+}
+
+
+#button1:active, #button1.lit{
+    background:green;
+}
+
+#button2:active, #button2.lit {
+    background:#FF8C00;
+}
+
+#button3:active, #button3.lit {
+    background:red;
+}
+
+#button4:active, #button4.lit {
+    background:#FFFF00;
+}
+
+#button5:active, #button5.lit{
+    background:#5F247C;
+}
+
+#button6:active, #button6.lit{
+    background:#28B463;
+}
+
+
+
+/* Notify player when the hit 1st strike */
+#snackbar1 {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 150px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #333333; /* Black background color */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 10px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when player hit 1 strike */
+#snackbar1.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Notify player when they hit 2nd strike */
+#snackbar2 {
+  visibility: hidden; 
+  min-width: 150px; 
+  margin-left: -125px; 
+  background-color: #333333; 
+  color: #ffffff; 
+  text-align: center;
+  border-radius: 10px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 50%; 
+  bottom: 30px; 
+}
+/* Show the snackbar when player hits 2nd strike  */
+#snackbar2.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbars in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+/* Animation for title name */
+@keyframes example {
+  0%   {color:white; left:0px; top:0px;}
+  50%  {color:#FF521B; left:200px; top:200px;}
+  100% {color:white; left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+h1{
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+
+/* Notify player when they hit 2nd strike */
+#level {
+  visibility: hidden; 
+  min-width: 150px; 
+  margin-left: -125px; 
+  text-align: center;
+  border-radius: 10px; 
+  padding: 16px; 
+  position: fixed; 
+  z-index: 1; 
+  left: 15%; 
+  bottom: 70%; 
+}
+
+/* Show the snackbar when player hits 2nd strike */
+#level.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: goUp 0.5s, goDown 0.5s 2.5s;
+  animation: goUp 0.5s, goDown 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@keyframes goUp {
+  from {bottom: 60%; opacity: 0;}
+  to {bottom: 70%; opacity: 1;}
+}
+
+@keyframes goDown {
+  from {bottom: 60%; opacity: 1;}
+  to {bottom: 70%; opacity: 0;}
+}
+
+.no-click {pointer-events: none;}

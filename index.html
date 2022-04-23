@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;900&family=Press+Start+2P&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Let's play!</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>Light and Sounds memory game</h1>
+    <p>
+      Welcome to the game!<br />
+      Repeat back the patterns by pressing the macarons. You have 30 seconds to
+      guess and 3 strikes each turn.<br />
+      Let's get started!
+    </p>
+    
+    <!--   Start, Stop and Timer   -->
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+    <div class="parent">
+     <div> <h2 class="child">Timer:</h2></div>
+     <div><h2 class="child" id="timer">00:30</h2></div> 
+    </div>
+
+    <!-- Level up alert  -->
+    <div id="level">
+      <h2>
+        Level Up!
+      </h2>
+    </div>
+    
+    
+
+    <div id="gameButtonArea">
+      <!-- Display buttons and image, image is showed when player click the button -->
+<!--  Button 1      -->
+      <button
+        id="button1"
+        onmousedown="startTone(1),displayImg(1)"
+        onmouseup="stopTone()"
+      ></button>
+      <img
+        src="https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/earth.png?v=1648145606600"
+        alt="earth"
+        class="hidden"
+        id="img1"
+        onmouseup="stopTone(),hideImg(1),guess(1)"
+      />
+<!--Button 2  -->
+      <button
+        id="button2"
+        onmousedown="startTone(2),displayImg(2)"
+        onmouseup="stopTone()"
+      ></button>
+      <img
+        src="https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/mercury-2.png?v=1648145799679"
+        alt="mercury"
+        class="hidden"
+        id="img2"
+        onmouseup="stopTone(),hideImg(2),guess(2)"
+      />
+<!-- Button 5 -->
+      <button
+        id="button5"
+        onmousedown="startTone(5),displayImg(5)"
+        onmouseup="stopTone()"
+        class="hidden"
+      ></button>
+      <img
+        src="https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/mercury.png?v=1648145624225"
+        alt="mercury"
+        class="hidden"
+        id="img5"
+        onmouseup="stopTone(),hideImg(5),guess(5)"
+      /><br>
+<!--Button 4  -->
+      <button
+        id="button4"
+        onmousedown="startTone(4),displayImg(4)"
+        onmouseup="stopTone()"
+      ></button>
+      <img
+        src="https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/jupiter.png?v=1648145912111"
+        alt="jupiter"
+        class="hidden"
+        id="img4"
+        onmouseup="stopTone(),hideImg(4),guess(4)"
+      />
+<!-- Button3 -->
+      <button
+        id="button3"
+        onmousedown="startTone(3),displayImg(3)"
+        onmouseup="stopTone()"
+      ></button>
+      <img
+        src= "https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/mars.png?v=1648145616816"
+        alt= "mars"
+        class="hidden"
+        id="img3"
+        onmouseup="stopTone(),hideImg(3),guess(3)"
+      />
+<!-- Button 6 -->
+      <button
+        id="button6"
+        onmousedown="startTone(6),displayImg(6)"
+        onmouseup="stopTone()"
+        class = "hidden"
+      ></button>
+      <img
+        src="https://cdn.glitch.global/7acb477e-9bca-4ab4-ad73-661f0514ef13/neptune.png?v=1648145641408"
+        alt="neptune"
+        class="hidden"
+        id="img6"
+        onmouseup="stopTone(),hideImg(6),guess(6)"
+      />
+    </div>
+    <div>
+      <button id="moreBtn" onclick="onBtn()">Add</button>
+      <button id="lessBtn" onclick="offBtn()">Remove</button>
+    </div>
+
+    <!--  Snack bar to notify player when they press the wrong button    -->
+    <div id="snackbar1">1 strike!</div>
+    <div id="snackbar2">2 strikes!</div>
+    
+  
+
+  </body>
+</html>
