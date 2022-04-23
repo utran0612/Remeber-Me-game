@@ -44,9 +44,9 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough (GIF)
 
-My gif doesn't work so please view the video here
-![video1](https://streamable.com/5npc0a)
-![video2](https://streamable.com/ehszg2)
+My gif doesn't work so please view the video here<br />
+[video1](https://streamable.com/5npc0a)<br />
+[video2](https://streamable.com/ehszg2)
 ![](gif3-link-here)
 ![](gif4-link-here)
 
