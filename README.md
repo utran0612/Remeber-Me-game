@@ -1,8 +1,4 @@
-# Pre-work - *Memory Game*
-
-**Memory Game** is a Light & Sound Memory game to apply for CodePath's SITE Program. 
-
-Submitted by: Uyen (Holly) Tran
+# *Memory Game*
 
 Time spent: 10 hours spent in total
 
@@ -73,12 +69,6 @@ My gif doesn't work so please view the videos in the hyperlinks:<br />
 - I also want to refactor the buttons and image sizes so that whenever a player clicks, the buttons won’t glitch. 
 
 - Also, if possible, I’d like to make all the buttons float, move and bounce (like bubbles!) on the screen. This way, it’s harder for the user to remember the patterns and correctly click the buttons. The button speed could be faster every round and the button size could be smaller so that it gets harder for the user to remember and catch the right buttons!
-
-
-## Interview Recording URL Link
-
-[My 5-minute Interview Recording](https://streamable.com/uzaog5)
-
 
 ## License
 
